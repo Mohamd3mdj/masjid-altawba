@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسجد التوبة - Masjid Al-Tawba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>مسجد التوبة</h1>
+        <p class="welcome-message">مرحبًا بكم في مسجد التوبة</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>لوحة التحكم لإضافة الدروس</h2>
+            <form id="lessonForm">
+                <label for="lessonName">اسم الدرس:</label>
+                <input type="text" id="lessonName" name="lessonName" required>
+
+                <label for="sheikhName">اسم الشيخ:</label>
+                <input type="text" id="sheikhName" name="sheikhName" required>
+
+                <label for="lessonType">نوع الدرس:</label>
+                <select id="lessonType" name="lessonType" required>
+                    <option value="">اختر نوع الدرس</option>
+                    <option value="religious">درس ديني</option>
+                    <option value="quran">تلاوة قرآن</option>
+                    <option value="lecture">محاضرة</option>
+                </select>
+                <label for="lessonFile">ملف صوتي أو فيديو (اختياري):</label>
+<input type="file" id="lessonFile" name="lessonFile" accept="audio/*,video/*">
+
+                <button type="submit">إضافة الدرس</button>
+            </form>
+            <div id="lessonsList"></div>
+        </section>
+
+        <section class="admins">
+            <h2>إدارة المشرفين</h2>
+            <form id="adminForm">
+                <label for="adminName">اسم المشرف:</label>
+                <input type="text" id="adminName" name="adminName" required>
+                <button type="submit">إضافة مشرف</button>
+            </form>
+            <ul id="adminsList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; مسجد التوبة</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
