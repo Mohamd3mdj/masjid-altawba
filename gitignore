@@ -1,0 +1,11 @@
+# Ignore uploads folder
+/server/uploads
+
+# Ignore lessons data
+/server/lessons.json
+
+# Node modules (تلقائي المفروض بتكون موجودة)
+node_modules/
+
+# بيئة العمل
+.env
